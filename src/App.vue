@@ -1,22 +1,34 @@
 <template>
   <div class="name">
-    {{ greet }}
+    {{ name }}
   </div>
+  <button 
+    class="btn btn-primary"
+    v-on:click="updateName"
+  >
+    Click
+  </button>
 </template>
 
 <script>
 export default {
   setup() {
-    const name = 'Kossie Coder1';
+    let name = 'Kossie Coder1';
 
-    const greeting = (name) => {
-      return 'Hello, ' + name;
+    // const greeting = (name) => {
+    //   return 'Hello, ' + name;
+    // };
+
+    // const greet = greeting(name); 
+
+    const updateName = () => {
+      name = 'Kossie Coder';
+      console.log(name)
     };
 
-    const greet = greeting(name); 
-
     return {
-      greet
+      name,
+      updateName,
     };
   }
 }

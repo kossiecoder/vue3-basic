@@ -1,11 +1,11 @@
 <template>
-  <div :class="nameClass">
-    {{ name }}
-  </div>
-  <input :type="type" :value="name">
+  <input 
+    type="text" 
+    v-model="name"
+  >
   <button 
     class="btn btn-primary"
-    @click="updateName"
+   @click="onSubmit"
   >
     Click
   </button>
@@ -17,20 +17,14 @@ import { ref } from 'vue';
 export default {
   setup() {
     const name = ref('Kossie');
-    const type = ref('number');
-    const nameClass = ref('')
 
-    const updateName = () => {
-      name.value = 'Coder';
-      type.value = 'text';
-      nameClass.value = 'name';
+    const onSubmit = () => {
+      console.log(name.value)
     };
 
     return {
       name,
-      updateName,
-      type,
-      nameClass,
+      onSubmit,
     };
   }
 }

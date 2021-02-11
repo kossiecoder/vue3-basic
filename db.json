@@ -1,12 +1,19 @@
 {
-    "todos": [
-        {
-            "id": 1,
-            "content": "hi"
-        },
-        {
-            "id": 2,
-            "content": "hi2"
-        }
-    ]
+  "todos": [
+    {
+      "subject": "asdf",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "subject": "buy milk",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "subject": "qwer",
+      "completed": false,
+      "id": 3
+    }
+  ]
 }

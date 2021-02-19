@@ -19,6 +19,28 @@
       @toggle-todo="toggleTodo"
       @delete-todo="deleteTodo"
     />
+    <hr />
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#">
+            Previous
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
@@ -36,10 +58,16 @@ export default {
   setup() {
     const todos = ref([]);
     const error = ref('');
+    const totalPage = ref(0);
+    const limit = 5;
+    const page = ref(1);
 
     const getTodos = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/todos');
+        const res = await axios.get(
+          `http://localhost:3000/todos?_page=${page.value}&_limit=${limit}`
+        );
+        totalPage.value = res.headers['x-total-count'];
         todos.value = res.data;
       } catch (err) {
         console.log(err);

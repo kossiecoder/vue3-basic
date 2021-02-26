@@ -1,36 +1,6 @@
 {
   "todos": [
     {
-      "subject": "buy milk",
-      "completed": true,
-      "id": 1
-    },
-    {
-      "subject": "clean my room",
-      "completed": false,
-      "id": 2
-    },
-    {
-      "subject": "study vuejs",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "subject": "1",
-      "completed": false,
-      "id": 4
-    },
-    {
-      "subject": "2",
-      "completed": false,
-      "id": 5
-    },
-    {
-      "subject": "3",
-      "completed": false,
-      "id": 6
-    },
-    {
       "subject": "4",
       "completed": false,
       "id": 7
@@ -99,6 +69,51 @@
       "subject": "21",
       "completed": false,
       "id": 20
+    },
+    {
+      "subject": "new todo",
+      "completed": false,
+      "id": 21
+    },
+    {
+      "subject": "123",
+      "completed": false,
+      "id": 22
+    },
+    {
+      "subject": "qwer",
+      "completed": false,
+      "id": 23
+    },
+    {
+      "subject": "123",
+      "completed": false,
+      "id": 24
+    },
+    {
+      "subject": "123123",
+      "completed": false,
+      "id": 25
+    },
+    {
+      "subject": "qweqweqwe",
+      "completed": false,
+      "id": 26
+    },
+    {
+      "subject": "asdasd",
+      "completed": false,
+      "id": 27
+    },
+    {
+      "subject": "zxczxc",
+      "completed": false,
+      "id": 28
+    },
+    {
+      "subject": "new todo",
+      "completed": false,
+      "id": 29
     }
   ]
 }

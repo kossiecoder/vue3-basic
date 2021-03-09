@@ -52,7 +52,7 @@
     },
     {
       "subject": "1234",
-      "completed": false,
+      "completed": true,
       "id": 17
     },
     {
@@ -67,43 +67,13 @@
     },
     {
       "subject": "21",
-      "completed": false,
+      "completed": true,
       "id": 20
     },
     {
       "subject": "new todo",
-      "completed": false,
+      "completed": true,
       "id": 21
-    },
-    {
-      "subject": "123",
-      "completed": false,
-      "id": 22
-    },
-    {
-      "subject": "qwer",
-      "completed": false,
-      "id": 23
-    },
-    {
-      "subject": "123",
-      "completed": false,
-      "id": 24
-    },
-    {
-      "subject": "123123",
-      "completed": false,
-      "id": 25
-    },
-    {
-      "subject": "qweqweqwe",
-      "completed": false,
-      "id": 26
-    },
-    {
-      "subject": "asdasd",
-      "completed": false,
-      "id": 27
     }
   ]
 }

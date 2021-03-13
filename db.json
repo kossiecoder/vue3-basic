@@ -61,16 +61,6 @@
       "id": 18
     },
     {
-      "subject": "123456",
-      "completed": false,
-      "id": 19
-    },
-    {
-      "subject": "21",
-      "completed": true,
-      "id": 20
-    },
-    {
       "subject": "new todo",
       "completed": true,
       "id": 21

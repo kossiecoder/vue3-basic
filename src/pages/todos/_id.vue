@@ -75,11 +75,11 @@ export default {
         const originalTodo = ref(null);
         const loading = ref(true);
         const {
-              toastMessage,
-              toastAlertType,
-              showToast,
-              triggerToast
-            } = useToast();
+          toastMessage,
+          toastAlertType,
+          showToast,
+          triggerToast
+        } = useToast();
 
         const todoId = route.params.id        
 
@@ -114,8 +114,6 @@ export default {
         };
 
         getTodo();
-
-        
 
         const onSave = async () => {
           try {

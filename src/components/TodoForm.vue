@@ -45,7 +45,7 @@
       class="btn btn-primary"
       :disabled="!todoUpdated"
     >
-      Save
+      {{ editing ? 'Update' : 'Create'}}
     </button>
     <button 
       class="btn btn-outline-dark ml-2"
@@ -136,15 +136,27 @@ export default {
 
         const onSave = async () => {
           try {
-            const res = await axios.put(`
-              http://localhost:3000/todos/${todoId}
-            `, {
+            let res;
+            const data = {
               subject: todo.value.subject,
-              completed: todo.value.completed
-            });
-
-            originalTodo.value = {...res.data};
-            triggerToast('Successfully saved!');
+              completed: todo.value.completed,
+              body: todo.value.body,
+            };
+            if (props.editing) {
+              res = await axios.put(`
+                http://localhost:3000/todos/${todoId}
+              `, data);
+              originalTodo.value = {...res.data};
+            } else {
+              res = await axios.post(`
+                http://localhost:3000/todos
+              `, data);
+              todo.value.subject = '';
+              todo.value.body = '';
+            }
+            
+            const message = 'Successfully ' + (props.editing ? 'Updated!' : 'Created!');
+            triggerToast(message);
           } catch (error) {
             console.log(error);
             triggerToast('Something went wrong', 'danger')

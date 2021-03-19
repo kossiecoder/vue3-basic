@@ -15,6 +15,12 @@
             type="text" 
             class="form-control"
           >
+          <div 
+            v-if="subjectError"
+            style="color: red"
+          >
+            {{subjectError}}
+          </div>
         </div>
       </div>
       <div v-if="editing" class="col-6">
@@ -87,6 +93,7 @@ export default {
             completed: false,
             body: ''
         });
+        const subjectError = ref('');
         const originalTodo = ref(null);
         const loading = ref(false);
         const {
@@ -135,6 +142,12 @@ export default {
         }
 
         const onSave = async () => {
+          subjectError.value = '';
+          if (!todo.value.subject) {
+            subjectError.value = 'Subject is required';
+            return;
+          }
+
           try {
             let res;
             const data = {
@@ -173,6 +186,7 @@ export default {
           showToast,
           toastMessage,
           toastAlertType,
+          subjectError,
         };
     }
 }

@@ -64,12 +64,6 @@
       "subject": "new todo222",
       "completed": true,
       "id": 21
-    },
-    {
-      "subject": "buy milk",
-      "completed": false,
-      "body": "go to supermarket and buy milk",
-      "id": 22
     }
   ]
 }

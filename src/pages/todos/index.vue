@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="opacity: 0.5">
     <div class="d-flex justify-content-between mb-3">
       <h2>To-Do List</h2>
       <button 

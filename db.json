@@ -32,38 +32,28 @@
     },
     {
       "subject": "f",
-      "completed": false,
+      "completed": true,
       "id": 13
     },
     {
       "subject": "a",
-      "completed": false,
+      "completed": true,
       "id": 14
     },
     {
       "subject": "12",
-      "completed": false,
+      "completed": true,
       "id": 15
     },
     {
       "subject": "123",
-      "completed": false,
+      "completed": true,
       "id": 16
     },
     {
       "subject": "1234",
-      "completed": true,
-      "id": 17
-    },
-    {
-      "subject": "12345",
       "completed": false,
-      "id": 18
-    },
-    {
-      "subject": "new todo222",
-      "completed": true,
-      "id": 21
+      "id": 17
     }
   ]
 }

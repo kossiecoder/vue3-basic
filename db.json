@@ -44,16 +44,6 @@
       "subject": "12",
       "completed": true,
       "id": 15
-    },
-    {
-      "subject": "123",
-      "completed": true,
-      "id": 16
-    },
-    {
-      "subject": "1234",
-      "completed": false,
-      "id": 17
     }
   ]
 }

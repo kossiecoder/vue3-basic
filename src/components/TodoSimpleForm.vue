@@ -25,11 +25,12 @@
 </template>
 
 <script>
-    import { ref } from 'vue';
+    import { ref, useContext } from 'vue';
 
     export default {
         emits: ['add-todo'],
-        setup(props, { emit }) {
+        setup() {
+            const { emit } = useContext();
             const todo = ref('');
             const hasError = ref(false);
             const onSubmit = () => {

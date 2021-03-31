@@ -1,7 +1,5 @@
 <template>
-  <div>Home Page</div>
-  <div>{{ count }}</div>
-  <button @click="count++">Add</button>
+  <h3 class="mt-4">Vue3 기초 익히기 - Composition Api</h3>
 </template>
 
 <script>

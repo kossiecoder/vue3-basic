@@ -9,7 +9,7 @@ export const useToast = () => {
     // const showToast = computed(() => store.state.toast.showToast); 
 
     const triggerToast = (message, type = 'success') => {
-        store.dispatch('toast/triggerToast', message, type);
+        store.dispatch('toast/triggerToast', { message, type });
     }
 
     return {
